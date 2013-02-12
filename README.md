@@ -1,4 +1,4 @@
-= About
+# About
 
 FireWall Object Verifier fwov is a tool to help some operational challenges on firewalls. 
 
@@ -11,21 +11,21 @@ Systems are migrated or deconfigured, names and IPs reused. Also, think about al
 
 So, here is the goal of fwov: set up a database of objects and notify the user of disputes. Maybe export to ruleset in a far future.
 
-= Architecture
+# Architecture
 
-== .fwovrc
+## .fwovrc
 
-# List off all domainsuffixes used in your organisation
+- List off all domainsuffixes used in your organisation
 domainsuffixes = domain1, domain2
-# Database stuff
+- Database stuff
 dbuser
 dbpass
-# various paths
+- various paths
 zonefiles ...
-# max age of dns entries
+- max age of dns entries
 dnsage = 
 
-== Database
+## Database
 
 * postgresql
 
@@ -39,7 +39,7 @@ dnsage =
     domainN-reverse
     ignore
 
-== Importer
+## Importer
 
 * Bind-Zonefiles
 * CheckPoint
@@ -47,26 +47,26 @@ dnsage =
 * iptables ferm
 * ...
 
-== Worker
+## Worker
 
 * DNS lookups if timestamp older than dnsage
 * one worker per domain
 
-== Reports
+## Reports
 
 * List of all disputed objects
 * one mail per object to create tickets
 * List of disappeared objects
 
-= IPv6
+# IPv6
 
 fwov cares about IPv6 and so should you
 
-= Disclaimer
+# Disclaimer
 
 Noob at work, no guarantees at all.
 If you know a similar project, please let me know
 
-= Licence
+# Licence
 
 Not yet decided yet, but will be open (GNU, APache, BSD)
