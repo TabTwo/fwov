@@ -3,7 +3,7 @@
 FireWall Object Verifier fwov is a tool to help some operational challenges on firewalls. 
 
 On a firewall you typically have objects that consist of an IP an a name. This name is usually just a label and only the IP is he info that really matters for the firewall.
-This label can be the name of the machine or its an operational name like "mailserver". The discussion of how to create names is a different topic, you may see Tom Limoncellis [The Practice of System and Network Administration(http://www.everythingsysadmin.com/) 
+This label can be the name of the machine or its an operational name like "mailserver". The discussion of how to create names is a different topic, you may see Tom Limoncellis [The Practice of System and Network Administration](http://www.everythingsysadmin.com/) 
 
 Sometimes the label is the name of a system that ownded this IP ten years ago, and this is where the fun starts.
 
